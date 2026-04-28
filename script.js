@@ -166,6 +166,7 @@ function startQuiz(){
 
 function showQuestion(){
     resetState();
+    timerDisplay.style.display = ""; // show timer again for questions
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex+1;
     questionElement.innerHTML = questionNo + "." + currentQuestion.question;
@@ -225,6 +226,7 @@ function selectAnswer(anything){
 
 function showScore(){
   resetState();
+  timerDisplay.style.display = "none"; // hide timer on score screen
   questionElement.innerHTML = `You Scored ${score} out of ${maxQues} !`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
