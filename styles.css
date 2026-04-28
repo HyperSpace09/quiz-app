@@ -82,3 +82,38 @@ body{
 .incorrect{
   background: red;
 }
+
+#setup-screen {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#question-count {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #222;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#start-btn {
+    background: #001e4d;
+    color: #fff;
+    text-align: center;
+}
+
+#start-btn:hover {
+    background: #222;
+}
+
+/* Styling for the Timer */
+#timer-display {
+    font-weight: 600;
+    color: #ff9393; /* Red color to make it urgent */
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 18px;
+}

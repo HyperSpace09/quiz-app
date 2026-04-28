@@ -10,6 +10,23 @@
 <body>
   <div class="app">
     <h1>Simple Quiz</h1>
+
+    <div id = "setup-screen">
+      <h2>How many Questions do you want?</h2>
+      <select id="question-count">
+        <option value="5">5 Questions</option>
+        <option value="10">10 Questions</option>
+        <option value="15">15 Questions</option>
+      </select>
+      <button id="start-btn" class="btn">Start Quiz</button>
+
+    </div>
+
+    <div id = "quiz-screen" style="display: none;">
+
+      <div id="timer-display">Time left: 15 sec</div>
+
+
     <div class="quiz">
       <h2 id = "question"> Question Goes Here </h2>
       <div id="answer-buttons">
@@ -20,7 +37,7 @@
 
       </div> 
       <button id="next-btn"></button>
-
+  </div>   
   </div>
   </div>
   
